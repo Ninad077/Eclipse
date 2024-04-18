@@ -1,0 +1,25 @@
+[[pages]]
+path = "app.py"
+name = "Home"
+icon = "🏠"
+
+[[pages]]
+path = "pages/0_Python_basics.py"
+name = "Page 2"
+icon = ":books:"
+
+[[pages]]
+name = "Supervised ML"
+icon = "🎈️"
+is_section = true
+
+# Pages after an `is_section = true` will be indented
+[[pages]]
+name = "pages/1_Linear_Regression.py"
+icon = "💪"
+
+
+# Unless you explicitly say in_section = false`
+[[pages]]
+name = "pages/Contact_me.py"
+in_section = false
