@@ -43,7 +43,7 @@ else:
     st.write("[:violet[Download link >]](https://raw.githubusercontent.com/slmsshk/pima-indians-diabetes.data.csv/main/pima-indians-diabetes.csv)")
 
     st.write("---")
-    st.components.v1.html(html_data, width=800, height=10000)
+    st.components.v1.html(html_data, width=800, height=23785)
 
     def download_notebook():
         with open("Artificial_Neural_Networks.ipynb", "rb") as f:

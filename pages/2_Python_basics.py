@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Define the file path with regular spaces
-path_to_html = "C:/Users/ninad/Eclipse/Day1_Python_basics (1).html"
+path_to_html = "Python_basics.html"
 
 # Check if the HTML file exists
 if not os.path.exists(path_to_html):
@@ -27,10 +27,10 @@ else:
                    at the end of this session. I have enclosed it at the bottom of this page. 
                     For now, let's get started with Python.""")
     st.write("---")
-    st.components.v1.html(html_data, width=800, height=13780)
+    st.components.v1.html(html_data, width=800, height=13900)
 
     def download_notebook():
-        with open("Day1_Python_basics.ipynb", "rb") as f:
+        with open("Python_basics.ipynb", "rb") as f:
             data = f.read()
         return data
 
@@ -38,4 +38,4 @@ else:
     st.write("----")
     st.write("To download 'Python basics' Jupyter notebook click on the button below.")
     button_label = ":violet[Download Jupyter Notebook]"
-    button_download = st.download_button(label=button_label, data=download_notebook(), file_name="Day1_Python_basics.ipynb", mime='application/x-ipynb+json')
+    button_download = st.download_button(label=button_label, data=download_notebook(), file_name="Python_basics.ipynb", mime='application/x-ipynb+json')

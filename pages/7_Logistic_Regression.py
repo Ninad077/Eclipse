@@ -42,7 +42,7 @@ else:
     
 
     st.write("---")
-    st.components.v1.html(html_data, width=800, height=16500)
+    st.components.v1.html(html_data, width=800, height=27000)
 
     def download_notebook():
         with open("Logistic_Regression.ipynb", "rb") as f:
