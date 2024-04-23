@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Define the file path with regular spaces
-path_to_html = "C:/Users/ninad/Eclipse/LogReg.html"
+path_to_html = "Logistic_regression.html"
 
 # Check if the HTML file exists
 if not os.path.exists(path_to_html):

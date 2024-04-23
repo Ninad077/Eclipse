@@ -84,6 +84,7 @@ elif selected_page == "Deep Learning":
 
         # Deep Learning section
         Page("pages/14_Artificial_Neural_Networks.py","Artificial Neural Networks", icon="🧠"),
+        Page("pages/15_CNN.py","Convolutional Neural Networks", icon="🧠"),
 
         Page("pages/Contact_me.py", in_section=False),
     ]

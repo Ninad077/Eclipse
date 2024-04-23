@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Define the file path with regular spaces
-path_to_html = "C:/Users/ninad/Eclipse/Artificial_Neural_Networks.html"
+path_to_html = "Artificial_Neural_Networks.html"
 
 # Check if the HTML file exists
 if not os.path.exists(path_to_html):
@@ -43,7 +43,7 @@ else:
     st.write("[:violet[Download link >]](https://raw.githubusercontent.com/slmsshk/pima-indians-diabetes.data.csv/main/pima-indians-diabetes.csv)")
 
     st.write("---")
-    st.components.v1.html(html_data, width=800, height=23785)
+    st.components.v1.html(html_data, width=800, height=10000)
 
     def download_notebook():
         with open("Artificial_Neural_Networks.ipynb", "rb") as f:
