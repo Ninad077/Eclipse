@@ -7,7 +7,7 @@ import zipfile
 import streamlit as st
 
 # Define the file path with regular spaces
-path_to_html = "C:/Users/ninad/MLapp_UI/Day1_Python_basics (1).html"
+path_to_html = "Null_value.html"
 
 # Check if the HTML file exists
 if not os.path.exists(path_to_html):
@@ -18,14 +18,14 @@ else:
         html_data = f.read()
 
     # Show HTML content
-    st.header("Introduction to the Libraries & Null Value Treatment")
-    st.markdown("""Happy to see you guys back! Now that you have fundamental knowledge about core Python functions
+    st.header(":violet[Introduction to the Libraries & Null Value Treatment]")
+    st.markdown("""Hi guys, happy to see you back. Now that you have fundamental knowledge about core Python functions
                     let us try to dive in a little deeper. Before jumping on any Machine Learning algorithm, it is 
                     important to learn 'Preprocessing'. The first step of Preprocessing is Installing & importing the
-                    libraries & Null value treatment. Since I would be working on multiple CSV files, I would appreciate
+                    libraries and Null value treatment. Since I would be working on multiple excel files, I would appreciate
                     if you guys download these files first to start working on it.
                  """)
-    df = pd.read_csv("advertising.csv")
+    
     
 def create_zip():
         with zipfile.ZipFile('Null.zip', 'w') as zipf:
@@ -37,17 +37,20 @@ def create_zip():
         return data
 
     # Create a download button for the zip file
-button_label_zip = "Download Excel Files Zip"
+button_label_zip = ":violet[Download Excel Files Zip]"
 button_download_zip = st.download_button(label=button_label_zip, data=create_zip(), file_name='Null.zip', mime='application/zip')
-st.components.v1.html(html_data, width=800, height=13780)
+
+
+st.write("---")
+st.components.v1.html(html_data, width=800, height=22300)
 
 def download_notebook():
-        with open("Day1_Python_basics.ipynb", "rb") as f:
+        with open("Null_value.ipynb", "rb") as f:
             data = f.read()
         return data
 
     # Create a download button for the notebook
 st.write("----")
-st.write("To download 'Python basics' Jupyter notebook click on the button below.")
-button_label = "Download Jupyter Notebook"
-button_download = st.download_button(label=button_label, data=download_notebook(), file_name="Day1_Python_basics.ipynb", mime='application/x-ipynb+json')
+st.write("To download 'Null Value treatment & Statistical functions' Jupyter notebook click on the button below.")
+button_label = ":violet[Download Jupyter Notebook]"
+button_download = st.download_button(label=button_label, data=download_notebook(), file_name="Null_value.ipynb", mime='application/x-ipynb+json')

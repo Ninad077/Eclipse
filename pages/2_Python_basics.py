@@ -39,3 +39,4 @@ else:
     st.write("To download 'Python basics' Jupyter notebook click on the button below.")
     button_label = ":violet[Download Jupyter Notebook]"
     button_download = st.download_button(label=button_label, data=download_notebook(), file_name="Python_basics.ipynb", mime='application/x-ipynb+json')
+    

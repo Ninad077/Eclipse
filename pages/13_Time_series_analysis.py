@@ -22,12 +22,14 @@ else:
 
     # Show HTML content
     st.header(":violet[Time Series Analysis using Exponential Smoothing & ARIMA]")
-    st.markdown("""Hi guys. Welcome to the session. Today we are going to learn Time Series Analysis
-                    using Exponential Smoothing & ARIMA model. I would request you to download the 
-                    dataset of 'Sample Superstore' and start working with me.
-                    Also in the notebook I have read '.xls' file since the original dataset was in 
-                    '.xls' extension. So while reading use the syntax
-                      **df = pd.read_excel(r"Sample_Superstore.xlsx",header = 0)**""")
+    st.markdown("""Hi guys. Welcome to the session. Today we are going to learn 3rd type of Machine Learning algorithm which is Reinforcement Machine Learning or populary known as 'Time Series Analysis'.
+                    This Time Series Analysis is going to be done using Exponential Smoothing & ARIMA model. Time Series analysis is generally used on continuous data. This analysis is mostly 
+                    used for forecasting a value. There's a thin difference between prediction & forecasting. Prediction is a strong hypothesis one does using independent columns, whereas 
+                    forecast is a mere weak prediction on dependent column. Here we use a previous value of the dependent column itself to forecast it's value in the future. So Time series analysis 
+                    is generally used to forecast the values of weather or stock prices or mostly continuous data. For now, I would request you to please download the dataset of 'Sample Superstore' 
+                    and start working with me. Also in the notebook I have read '.xls' file since the original dataset was in '.xls' extension. So while reading please use the syntax:  
+                  **df = pd.read_excel(r"Sample_Superstore.xlsx",header = 0)**. Time series analysis is a big file, so the webpage might take a while to load. 
+                    Please have patience :)""")
     
    
    

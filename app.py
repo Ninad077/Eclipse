@@ -27,7 +27,7 @@ if selected_page == "Preprocessing":
         Page("app.py", "Eclipse",""),
 
         # Preprocessing Section
-        Page("pages/0_Jupyter_Notebook_Installation.py","Jupyter Notebook Installation", icon="🐍"),
+    
         Page("pages/1_Jupyter_Notebook_Introduction.py","Jupyter notebook Introduction", icon="🐍"),
         Page("pages/2_Python_basics.py","Python basics", icon="🐍"),
         Page("pages/3_Null_value_treatment.py","Null value treatment", icon="🐍"),
@@ -85,6 +85,9 @@ elif selected_page == "Deep Learning":
         # Deep Learning section
         Page("pages/14_Artificial_Neural_Networks.py","Artificial Neural Networks", icon="🧠"),
         Page("pages/15_CNN.py","Convolutional Neural Networks", icon="🧠"),
+        Page("pages/16_TFIDF.py","NLP-TFIDF", icon="🧠"),
+        Page("pages/17_RASA.py","NLP-RASA", icon="🧠"),
+        Page("pages/18_Sentiment_analysis.py","NLP-Sentiment Analysis", icon="🧠"),
 
         Page("pages/Contact_me.py", in_section=False),
     ]
@@ -98,34 +101,33 @@ add_page_title()
 # Title and image
 st.image("Eclipse_logo.png")
 st.write("---")
-st.markdown("""Hi, Ninad here. Eclipse is an open source web application designed by me to teach 
-Machine Learning. It spans through core Python, Preprocessing & Machine Learning models step
-by step in a way that even a layman would understand. Rest assured,I have tried to break down 
-complex concepts with simple examples so that the user gets a clear picture of everything. 
-I would recommend the user to start following the course from the first session and follow
-it religiously till the last one. To make things easy for the user I have divided the lecture
-series into multiple sections namely Preprocessing, Supervised ML, Unsupervised ML, Deep Learning.
-            
-I have enclosed the essential datasets and Jupyter notebooks in every session so that people can
-refer and practice on their own comfort at home. We would be using Jupyter notebooks to code and 
-the language used is Python. I would walk you through Jupyter notebook installation and make 
-you familiar with Jupyter notebook environment on Anaconda navigator. For now, I would just like 
-you to have 2 prerequisites. Funny enough,those two prerequisites have nothing to do with 
-technology and they are: **Passion & curiosity**. Be passionate & be curious about the things to 
-learn. Don't be intimidated if you don't understand something. Machine learning requires practice 
-and with time you would be proficient. My only advice is to make your foundations about the core 
-concepts very clear which would prepare you to learn more advanced concepts in future with ease.
-I have kept this application open source because in the era of MOOCs which do charge subscription,
-I  don't want to make money an impediment for someone who has the zeal within him or her to learn 
-something new. 
+st.markdown("""Hi, Ninad here. Eclipse is an open source web application designed by me to teach Machine Learning. It spans through core Python
+                Preprocessing, Machine Learning & Deep Learning models step by step in a way that even a layman would understand. Rest assured, I have tried to 
+                break down complex concepts with simple examples so that the user gets a clear picture of everything. I would recommend the user 
+                to start following the course from the first session and follow it religiously till the last one. To make things easy for the user, 
+                I have divided the lecture series into multiple sections namely Python Preprocessing, Supervised ML, Unsupervised ML, Reinforcement
+                ML & Deep Learning.
+                I have enclosed the essential datasets and Jupyter notebooks in every session so that people can refer and practice at their own comfort 
+                at home. We would be using Jupyter notebooks to code and the language used is Python. I would give you a brief introduction to Jupyter notebbok 
+                and get you familiar with Jupyter notebook environment on Anaconda navigator. For the entire lecture series, I would recommend you to download 
+                Anaconda environment & Jupyter notebook on your local PC first. I have enclosed some installation blogs in the links down below, please go through
+                them and install the setup first. Other non-technical prerequisites you need are: **Passion & curiosity**. Be passionate & be curious about the
+                things to learn & don't be intimidated if you don't understand something. Machine learning requires practice and with time you would be proficient. 
+                My only advice to you is that, make your foundations about the core concepts very clear which would prepare you to learn more advanced concepts in 
+                future with ease. The entire Machine Learning is taught using several libraries most important being scikit learn, pandas, numpy, matplotlib & seaborn. 
+                On the other hand, the most important Library used in Deep Learning is tensorflow. So once you learn the basics well, try implementing projects using these 
+                libraries so that you get well versed in them with time. Also, I am of the opinion that learning something is no less than implementing a Machine 
+                Learning algorithm, the more you train, the better would be results. So keep practicing every day.
+                I have kept this application open source because in the era of MOOCs which do charge subscription, I  don't want to make money an impediment for someone
+                who has the zeal within him or her to learn something new. 
+                For any query related to Machine Learning feel free to text me in the Query box below. To get started, select a Section from the navigation bar above and 
+                follow the lecture series listed in the sidebar (extreme left of your screen).
+                Hope you will have fun!
+                Happy Learning :)""")
 
-For any query related to Machine Learning feel free to text me in the Query box below. 
-To get started, select a Section from the navigation bar above and follow the lecture series
-listed in the sidebar (extreme left of your screen).
-            
-Hope you will have fun!
-            
-Happy Learning :)""")
+st.write("---")
+st.write("[Install Anaconda blog >>](https://www.geeksforgeeks.org/how-to-install-anaconda-on-windows/)")
+st.write("[Install Jupyter notebook blog >>](https://www.geeksforgeeks.org/install-jupyter-notebook-in-windows/)")
 st.write("---")
 st.subheader(":mailbox: :violet[Query box]") 
 contact_form = """<form action="https://formsubmit.co/ninadmandavkar28@gmail.com" method="POST">

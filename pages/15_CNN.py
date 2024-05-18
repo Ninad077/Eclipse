@@ -43,7 +43,7 @@ else:
         return data
 
     # Create a download button for the zip file
-    button_label_zip = "Download dataset Zip"
+    button_label_zip = ":violet[Download dataset Zip]"
     button_download_zip = st.download_button(label=button_label_zip, data=create_zip(), file_name='dataset.zip', mime='application/zip')
     
 
@@ -62,3 +62,5 @@ else:
     button_label = ":violet[Download Jupyter Notebook]"
     button_download = st.download_button(label=button_label, data=download_notebook(), file_name="CNN.ipynb", mime='application/x-ipynb+json')
     
+    st.markdown("""You can check out Image classification app on my Hugging face profile.""")
+    st.write("[Visit the app >](https://huggingface.co/Ninad077)")

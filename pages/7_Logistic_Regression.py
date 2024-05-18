@@ -21,7 +21,7 @@ else:
 
     # Show HTML content
     st.header(":violet[Logistic Regression]")
-    st.markdown(""" Hi guys. Welcome back. Till now we have understood how can one predict a value in future
+    st.markdown(""" Hi guys. Welcome back. Till now we have understood how one can predict a value in future
     from a current value in the dataset. But what if we have a situation where we have to predict a class 
     from a current value in the dataset? Is it possible to classify an entity based on the current data? The 
     answer to all these questions lies in our next algorithm 'Logistic regression'. Before starting with 
